@@ -3,5 +3,6 @@
 
 
 <p align="center">
-  <img src="https://github.com/SVJLucas/self-supervised-watermarking/assets/60625769/90fe4d38-658e-4aad-b594-3bd95398715d" alt="Results for DCT" height="600px" />
+  <img src="https://github.com/SVJLucas/self-supervised-watermarking/assets/60625769/68f235c5-921f-4162-9dc6-a039eff14a2d" alt="Results for DCT" height="400px" />
 </p>
+
