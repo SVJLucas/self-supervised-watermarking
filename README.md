@@ -41,3 +41,34 @@ We will conduct the experiment using 10 randomly selected images from the Oxford
 - **Contrast Test**: The Contrast Test assesses the effect of contrast adjustments on an algorithm's accuracy by modifying the contrast of images with a random factor. This simulates conditions with varying levels of contrast, testing the algorithm's ability to discern objects against backgrounds with minimal to significant contrast differences.
 
 Each attack provides insight into specific aspects of algorithm robustness, highlighting vulnerabilities and areas for improvement in handling real-world image variations.
+
+# Results
+
+The comparative analysis of the self-supervised models CLIP, DiNOv2, and ViTMAE across various transformation tests unveils insightful trends in their performance, particularly in the context of image zero-watermarking. For instance, DiNOv2 consistently outperforms the other models in Normalized Correlation (NC) [Table 1] across all tests, suggesting its superior capability in maintaining the integrity of the watermark despite various forms of image manipulation. This is especially notable in tests like the "Resize Scale Test" and "Gaussian Blur Test," where DiNOv2's NC values significantly surpass those of CLIP and ViTMAE, highlighting its robustness against scaling and blurring—common challenges in watermark security.
+
+Conversely, when examining the Bit Error Rate (BER) [Table 2], a lower score is preferable as it indicates fewer errors in watermark extraction. Here, DiNOv2 again shows exceptional performance, particularly in the "Gaussian Blur Test" and "Brightness Test," suggesting that it can effectively recover watermarks from images subjected to blurring and brightness alterations. This consistent achievement across both NC and BER metrics underscores the potential of self-supervised learning models like DiNOv2 in enhancing the security and resilience of digital watermarking techniques.
+
+### Normalized Correlation (NC) [Table 1]
+
+| Test                | CLIP            | DiNOv2          | ViTMAE          |
+|---------------------|-----------------|-----------------|-----------------|
+| Rotation Attack Test| 0.8624          | **0.9431**      | 0.8693          |
+| Noise Test          | 0.7872          | **0.8575**      | 0.8506          |
+| Crop Ratio Test     | 0.9070          | **0.9423**      | 0.9006          |
+| Resize Scale Test   | 0.9408          | **0.9774**      | 0.9093          |
+| Gaussian Blur Test  | 0.9953          | **0.9986**      | 0.9085          |
+| Brightness Test     | 0.9756          | **0.9914**      | 0.9070          |
+| Contrast Test       | 0.9741          | **0.9936**      | 0.9081          |
+
+### Bit Error Rate (BER) [Table 2]
+
+| Test                | CLIP            | DiNOv2          | ViTMAE          |
+|---------------------|-----------------|-----------------|-----------------|
+| Rotation Attack Test| 0.0700          | **0.0296**      | 0.0681          |
+| Noise Test          | 0.1070          | **0.0738**      | 0.0777          |
+| Crop Ratio Test     | 0.0472          | **0.0301**      | 0.0518          |
+| Resize Scale Test   | 0.0301          | **0.0118**      | 0.0472          |
+| Gaussian Blur Test  | 0.0024          | **0.0007**      | 0.0476          |
+| Brightness Test     | 0.0124          | **0.0045**      | 0.0485          |
+| Contrast Test       | 0.0132          | **0.0033**      | 0.0479          |
+
