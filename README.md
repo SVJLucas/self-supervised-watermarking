@@ -2,14 +2,13 @@
 
 ## Sumary
 
-Analyzing Self-Supervised Models: CLIP, DiNOv2, and ViTMAE in the Context of Zero-Watermarking
+Analyzing Self-Supervised Models: **CLIP**, **DiNOv2**, and **ViTMAE** in the Context of Zero-Watermarking
 
 - [Introduction and Motivation](#Introduction-and-Motivation)
 - [Zero-Watermarking Pipeline](#Zero-Watermarking-Pipeline)
   - [Watermark "Embedding" Process Using Self-Supervised Models: Master Share Construction](#watermark-embedding-process-using-self-supervised-models-master-share-construction)
   - [Watermark Retrieval Process Using Self-Supervised Models: Master Share in Action](#watermark-retrieval-process-using-self-supervised-models-master-share-in-action)
 - [The Oxford 102 Flowers Dataset: A Brief Overview](#the-oxford-102-flowers-dataset-a-brief-overview)
-- [Transformations and Post-Attack Extraction Visualizations](#Transformations-and-Post-Attack-Extraction-Visualizations)
 - [Considered Attacks](#Considered-Attacks)
 - [Metrics, Results and Discussion](#Metrics-Results-and-Discussion)
 - [Conclusion](#Conclusion)
