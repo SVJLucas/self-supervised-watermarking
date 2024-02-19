@@ -129,6 +129,19 @@ This research contributes to the broader discourse on digital watermarking secur
 
 # References
 
+[1]: Atoany Fierro-Radilla, Mariko Nakano-Miyatake, Manuel Cedillo-Hernandez, Laura Cleofas-Sanchez, and Hector Perez-Meana. A robust image zero-watermarking using convolutional neural networks. In 2019 7th International Workshop on Biometrics and Forensics (IWBF), pages 1–5. IEEE, 2019.
 
-[^8]: Nilsback, M.-E., & Zisserman, A. (2008). Automated flower classification over a large number of classes. Visual Geometry Group, Department of Engineering Science, University of Oxford, United Kingdom.
+[2]: Vincent Wilmet and Sauraj Verma and Tabea Redl and Håkon Sandaker and Zhenning Li. A Comparison of Supervised and Unsupervised Deep Learning Methods for Anomaly Detection in Images.
+
+[3]: Pierre Fernandez, Alexandre Sablayrolles, Teddy Furon, Hervé Jégou, and Matthijs Douze. Watermarking images in self-supervised latent spaces. In ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 3054–3058. IEEE, 2022.
+
+[4]: Vedran Vukotic, Vivien Chappelier, and Teddy Furon. Are classification deep neural networks good for blind image watermarking? Entropy, 22(2):198, 2020.
+
+[5]: Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever. Learning Transferable Visual Models From Natural Language Supervision. In ICML,2021.
+
+[6]: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Doll´ar, and Ross Girshick. Masked autoencoders are scalable vision learners. arXiv:2111.06377, 2021
+
+[7]: M. Oquab, T. Darcet, T. Moutakanni, H. Vo, M. Szafraniec, V. Khalidov, P. Fernandez, D. Haziza, F. Massa, A. El-Nouby et al., “Dinov2: Learning robust visual features without supervision,” arXiv preprint arXiv:2304.07193, 2023.
+
+[8]: Nilsback, M.-E., & Zisserman, A. (2008). Automated flower classification over a large number of classes. Visual Geometry Group, Department of Engineering Science, University of Oxford, United Kingdom.
 
