@@ -1,5 +1,22 @@
 # Can Unlabeled Data Improve Watermark Security? Investigating Self-Supervised Models for Image Zero-Watermarking
 
+## Sumary
+
+Analyzing Self-Supervised Models: CLIP, DiNOv2, and ViTMAE in the Context of Zero-Watermarking
+
+- [Introduction and Motivation](#Introduction-and-Motivation)
+- [Zero-Watermarking Pipeline](#Zero-Watermarking-Pipeline)
+  - [Watermark "Embedding" Process Using Self-Supervised Models: Master Share Construction](#watermark-embedding-process-using-self-supervised-models-master-share-construction)
+  - [Watermark Retrieval Process Using Self-Supervised Models: Master Share in Action](#watermark-retrieval-process-using-self-supervised-models-master-share-in-action)
+- [The Oxford 102 Flowers Dataset: A Brief Overview](#the-oxford-102-flowers-dataset-a-brief-overview)
+- [Transformations and Post-Attack Extraction Visualizations](#Transformations-and-Post-Attack-Extraction-Visualizations)
+- [Considered Attacks](#Considered-Attacks)
+- [Metrics, Results and Discussion](#Metrics-Results-and-Discussion)
+- [Conclusion](#Conclusion)
+- [References](#References)
+
+
+# Introduction and Motivation
 In the rapidly advancing field of digital media security, the concept of zero-watermarking has emerged as a critical strategy, particularly in domains where the slightest image distortion could result in significant inaccuracies in diagnosis or detection, such as in medical and remote sensing images. Traditional watermarking techniques, while serving key roles in copyright protection and content authentication, inherently introduce some distortion to the host image. This limitation calls for a shift towards zero-watermarking approaches, wherein the watermark maintains a logical connection with the host image without physical embedding, thus preserving the original image's integrity.
 
 In the study **"A Robust Image Zero-watermarking using Convolutional Neural Networks"** [1] by _Fierro et al._, the authors explore leveraging the latent space of Convolutional Neural Networks (CNN) for creating image-identifying masks. However, their approach involves training their CNN in a supervised manner. Contrasting this, **"A Comparison of Supervised and Unsupervised Deep Learning Methods for Anomaly Detection in Images"**[2] suggests that supervised learning models, while adept at learning task-specific features, might not fully capture the comprehensive information present within images, tending instead to prioritize task-relevant features over a wider understanding of the image content.
@@ -40,7 +57,7 @@ The watermark embedding process using a self-supervised model involves several s
 
 
 
-## Watermark Retrieval Process Using Self-Supervised Models: : Master Share in Action
+## Watermark Retrieval Process Using Self-Supervised Models: Master Share in Action
 
 The process of verifying the ownership of potentially attacked images involves extracting features using a self-supervised model and comparing these with the stored master share, `MS`. The steps are as follows, as shown in [Figure 2]:
 
@@ -90,7 +107,7 @@ Assessing the resilience of watermarking algorithms involves simulating a variet
 
 Each attack provides insight into specific aspects of algorithm robustness, highlighting vulnerabilities and areas for improvement in handling real-world image variations.
 
-# Results
+# Metrics, Results and Discussion
 
 The comparative analysis of the self-supervised models CLIP, DiNOv2, and ViTMAE across various transformation tests unveils insightful trends in their performance, particularly in the context of image zero-watermarking. For instance, DiNOv2 consistently outperforms the other models in Normalized Correlation (NC) [Table 1] across all tests, suggesting its superior capability in maintaining the integrity of the watermark despite various forms of image manipulation. This is especially notable in tests like the "Resize Scale Test" and "Gaussian Blur Test," where DiNOv2's NC values significantly surpass those of CLIP and ViTMAE, highlighting its robustness against scaling and blurring—common challenges in watermark security.
 
